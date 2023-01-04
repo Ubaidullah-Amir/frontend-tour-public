@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/top_section.css">
+    <link rel="stylesheet" href="./css/left_sidebar.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div class="top_section">
+            
+            <div class="logo">
+                <div class="menu_button ">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1>Chillax-Tours</h1>
+            </div>
+            <div class="search_calender">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search Tour">
+                </div>
+                <div class="calender">
+                    <i class="fa-light fa-calendar-days"></i>
+                    <input type="date">
+                </div>
+            </div>
+            
+            <div class="noti-admin_avatar">
+                <div class="notification"><i class="fa-regular fa-bell"></i></div>
+                <div class="admin_avatar">
+                    <p>Admin name</p>
+                    <img src="./images/user_image.jfif" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <!-- left sidebar -->
+        <div class="left_sidebar ">
+            <ul>
+                <li class="active_link"><a href="#">Dashboard</a></li>
+                <li><a href="#">Tour Package</a></li>
+            </ul>
+        </div>
+
+        <!-- content -->
+        <div class="center_content">
+            
+            <div class="text_image">
+                <div class="text">
+                    <h2>Welcome to Chillax-Tours & Travels</h2>
+                    <p>Lorem ipsum  elit. Officiis tempora fuga, at molestias hic ipsam harum sapiente fugiat soluta obcaecati quaerat doloribus, aspernatur corrupitatibus amet.</p>
+                
+                </div>
+                <div class="img"><img src="./images/map_iamge.jpg" alt=""></div>
+            </div>
+            <!-- charts section -->
+            <div class="charts-section">
+                <div class="chart-div" onclick="event_handler_chart_div(this)">
+                    <p class="big_p" >25K</p>
+                    <p class="detail_p">3.3%</p>
+                    <p>Today Views</p>
+                </div>
+                <div class="chart-div" onclick="event_handler_chart_div(this)">
+                    <p class="big_p" >25K</p>
+                    <p class="detail_p">3.3%</p>
+                    <p>Today Views</p>
+                </div>
+                <div class="chart-div" onclick="event_handler_chart_div(this)">
+                    <p class="big_p">25K</p>
+                    <p class="detail_p">3.3%</p>
+                    <p>Today Views</p>
+                </div>
+                <div class="chart-div" onclick="event_handler_chart_div(this)">
+                    <p class="big_p" >25K</p>
+                    <p class="detail_p">3.3%</p>
+                    <p>Today Views</p>
+                </div>
+            </div>
+            <!-- tour table -->
+            <div class="tour-table-section">
+                <h2>Tour status</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, in!</p>
+                
+                <table class="table-content tour-table">
+                    <thead>
+                      <tr>
+                        <th>Location</th>
+                        <th>Package</th>
+                        <th>Type</th>
+                        <th>Duration</th>
+                        <th>Tourist</th>
+                        <th>Amount(RS)</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Canada</td>
+                        <td>Somename</td>
+                        <td>Group</td>
+                        <td>3D 2N</td>
+                        <td>14</td>
+                        <td>30K</td>
+                        <td>Active</td>
+                      </tr>
+                      <tr class="table-row-active">
+                        <td>Canada</td>
+                        <td>Somename</td>
+                        <td>Group</td>
+                        <td>3D 2N</td>
+                        <td>14</td>
+                        <td>30K</td>
+                        <td>Active</td>
+                      </tr>
+                      <tr>
+                        <td>Canada</td>
+                        <td>Somename</td>
+                        <td>Group</td>
+                        <td>3D 2N</td>
+                        <td>14</td>
+                        <td>30K</td>
+                        <td>Active</td>
+                      </tr>
+                      <tr>
+                        <td>Canada</td>
+                        <td>Somename</td>
+                        <td>Group</td>
+                        <td>3D 2N</td>
+                        <td>14</td>
+                        <td>30K</td>
+                        <td>Active</td>
+                      </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <!-- right_sidebar -->
+        <div class="right_sidebar">
+            <div class="latest_activity">
+                <h3>Latest Activity</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, veniam.</p>
+                
+                <div class="clock-activities">
+                    <div class="clock"></div>
+                    <div class="activities">
+                        <div class="individual-activity">
+                            <p class="bold">12 Jan,2022 Canada</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, earum?</p>
+                        </div>
+                        <div class="individual-activity">
+                            <p class="bold">12 Jan,2022 Canada</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, earum?</p>
+                        </div>
+                        <div class="individual-activity">
+                            <p class="bold">12 Jan,2022 Canada</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, earum?</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="social_media">
+                <h3>Social Media</h3>
+                <table class="table-content social-media-table">
+                    <thead>
+                      <tr>
+                        <th>Media</th>
+                        <th>Share</th>
+                        <th>Like</th>
+                        <th>Members</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Youtube</td>
+                        <td>12k</td>
+                        <td>18k</td>
+                        <td>250</td>
+                      </tr>
+                      <tr class="table-row-active">
+                        <td>Facebook</td>
+                        <td>12k</td>
+                        <td>18k</td>
+                        <td>160</td>
+                      </tr>
+                      <tr>
+                        <td>Facebook</td>
+                        <td>12k</td>
+                        <td>18k</td>
+                        <td>160</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+        <!-- pop up charts -->
+        <!-- <div class="popup_chart_container">
+            <button>close</button>
+            <h2>Chart for</h2>
+            <p>Today's Views</p>
+            <canvas id="myChart"></canvas>
+        </div> -->
+
+    </div>
+    
+    <script src="./javascript/menu_button.js"></script>
+    <script src="./javascript/charts_control.js"></script>
+</body>
+</html>

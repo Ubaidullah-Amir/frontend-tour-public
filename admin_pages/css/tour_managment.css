@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+.container{
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    grid-template-columns: 200px 1fr;
+    gap: 1em;
+    background-color:rgb(233, 242, 245) ;
+}
+.container p{
+    font-size: 0.85em;
+}
+/* center content */
+.center_content{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+.add_package{
+    background-color: white;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    padding: 1em;
+    align-items: center;
+}
+.add{
+    width: 3em;
+    aspect-ratio: 1;
+    background-color: #009879;
+    border-radius: 50%;
+    position: relative;
+}
+.add:hover{
+    background-color: #35ebc6;
+}
+
+.add span{
+    position: absolute;
+    background-color: white;
+    width: 70%;
+    height: 3px;
+    display: block;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+.add span:nth-child(2){
+    rotate: 90deg;
+
+}
+
+/* all packages */
+.all_packages{
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+/* packages table */
+.table-content {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-content thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table-content th,
+.table-content td {
+    padding: 0.9em 1em;
+}
+
+.table-content tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table-content tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table-content tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.table-content tbody tr.table-row-active {
+    font-weight: bold;
+    color: #009879;
+}
+
+@media screen and (max-width:1200px) {
+    .center_content{
+        grid-column: 1/-1;
+    }
+    
+    
+}
+@media screen and (max-width:800px) {
+    .container{
+        font-size: 1em;
+    }
+    .table-content{
+        font-size: 0.75em;
+    }
+    .table-content th,
+    .table-content td {
+        padding: 0.8em 0.3em;
+    }
+
+}
