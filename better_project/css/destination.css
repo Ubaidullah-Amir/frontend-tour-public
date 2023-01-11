@@ -1,3 +1,11 @@
+/* overridign the background image in main corousel */
+.main_crousel-card{
+    background: linear-gradient(rgba(0, 0, 0, 0.322), rgba(0, 0, 0, 0.37)), url("../images/destination_image_bg.png");
+    background-size: cover;
+    background-position: right;
+    background-blend-mode: darken;
+    z-index: 1;
+}
 .places_container{
     justify-content: center;
     max-width: 1100px;

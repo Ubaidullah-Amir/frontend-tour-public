@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- order matters -->
+    <script src="https://kit.fontawesome.com/e42bda399a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/top_section.css">
     <link rel="stylesheet" href="./css/left_sidebar.css">
     <link rel="stylesheet" href="./css/tour_managment.css">
@@ -28,7 +29,7 @@
                     <input type="text" placeholder="Search Tour">
                 </div>
                 <div class="calender">
-                    <i class="fa-light fa-calendar-days"></i>
+                    <i class="fa-solid fa-calendar-week"></i>
                     <input type="date">
                 </div>
             </div>
@@ -116,7 +117,38 @@
             </div>
         </div>
 
+        <!-- pop up adding a tour form -->
+        <div class="popup_tour_container form_zero_scale">
+            <button id="form_close"">close</button>
+            <h2>Add a Tour</h2>
+            <form class="tour_form" action="#">
+                <div class="tour_form_main_info">
+                    <div class="tour_input tour_input_From">
+                        <p>From :</p> <input name="origin" required type="text" placeholder="Enter a city">
+                    </div>
+                    <div class="tour_input tour_input_To">
+                        <p>To :</p> <input name="destination" required type="text" placeholder="Enter a city">
+                    </div>
+                    <div class="tour_input tour_input_Sdate">
+                        <p>Start Date :</p> <input name="startDate" required type="date" >
+                    </div>
+                    <div class="tour_input tour_input_Rdate">
+                        <p>Return  Date:</p> <input name="returnDate" required type="date" >
+                    </div>
+                    <div class="tour_input tour_input_files">
+                        
+                        <p> <i class="fa-solid fa-image"></i> Chose Images </p>
+                        <input name="images" required type="file" multiple>
+                    </div>
+                    <div class="tour_input tour_input_submit">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </div>
     <script src="./javascript/menu_button.js"></script>
+    <script src="./javascript/tour_managment.js"></script>
 </body>
 </html>

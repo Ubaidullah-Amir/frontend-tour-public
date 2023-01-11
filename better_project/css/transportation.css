@@ -242,14 +242,16 @@ body{
 }
 /* overridign the background image in main corousel */
 .main_crousel-card{
-    background-image: url("../images/airplane.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.11)), url("../images/airplane.png");
     background-size: cover;
     z-index: 1;
 }
 .main_crousel-card h2{
     color: rgb(0, 0, 0);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 3em;
+    font-family: 'Caveat', cursive;
+    font-size: 4em;
     font-weight: 1000;
-    top: 44%;
+    top: 5%;
+    left: 50%;
+    translate: -55% 0;
 }

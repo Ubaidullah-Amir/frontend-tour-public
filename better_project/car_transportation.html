@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e42bda399a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main_crousel.css">
+    <link rel="stylesheet" href="./css/top_section.css">
+    <link rel="stylesheet" href="./css/car_transportation.css">
+</head>
+<body>
+    <div class="container">
+        
+
+        <!-- navigation bar -->
+        <!-- link top_section -->
+        <div class="top_section">
+            <div class="logo">
+                <h2>Chillax-Travel</h2>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">pages</a></li>
+                <li><a href="#">Blob</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="remove_md">
+                <div class="phone_number"><p><i class="fa-sharp fa-solid fa-phone"></i> 0123-456789</p></div>
+                <div class="icons">
+                    <i class="icon_family fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                </div>
+            </div>
+            <div style="display:flex;gap:1em">
+                <p class="user_name">Guest</p>
+                <div class="avatar">
+                    <img class="avatar_img" src="./images/guest_img.webp" alt="">
+                    <div class="guest_info">
+                        <button >Login</button>
+                    </div>
+                    <div class="user_info">
+                        <p>username</p>
+                        <p>user email</p>
+                        <button >Logout</button>
+                    </div>
+                </div>
+                <div class=" menu_button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <!-- main crousel -->
+        <!-- link main_crousel (for responsive) -->
+        <!-- link transportation (to override the image in corousel card) -->
+        <div class="main_crousel">
+            <div class=" main_crousel-card">
+                <h2>Rent a Car</h2>
+            </div>
+        </div>
+
+
+        <!-- transportation -->
+        <div class="trans_car">
+            <h1>Welcome! Find a car for your next trip</h1>
+            <div class="trans_form">
+                <h3>Search Car Fliter</h3>
+                <form action="#" id="trans_car_form">
+                    <div class="trans_form_extra_info">
+                        <div class="trans_input_return">
+                            <!-- not required in from data so removed name attribute -->
+                            <select  required>
+                                <option value="with-in-city" selected>with in city</option>
+                                <option value="outside-city">outside city</option>
+                            </select>
+                        </div>
+                        <div class="trans_input_travellers">
+                            <div>
+                                <span>Passengers</span> 
+                                <input name="adults" required type="number" value="1" min="1" max="8">
+                            </div>
+                        </div>
+                        <div class="trans_input_price">
+                            <div>
+                                <span>Price :</span><span class="input_price_display">0</span>
+                                <input name="price" type="range" required min="0" max="25000">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="trans_form_main_info">
+                        <div class="trans_input trans_input_Pcity">
+                            <p>Pick-up-city :</p> <input name="origin" required type="text" placeholder="Enter a city">
+                        </div>
+                        <div class="trans_input trans_input_PDate">
+                            <p>Pick-up-date:</p> <input name="pick-up-date" required type="date" >
+                        </div>
+                        <div class="trans_input trans_input_PTime">
+                            <p>Pick-up-time</p> 
+                            <select name="pick-up-time" required>
+                                <option value="01:00">01:00</option>
+                                <option value="02:00">02:00</option>
+                                <option value="03:00">03:00</option>
+                                <option value="04:00">04:00</option>
+                                <option value="05:00">05:00</option>
+                                <option value="06:00">06:00</option>
+                                <option value="07:00">07:00</option>
+                                <option value="08:00">08:00</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                                <option value="21:00">21:00</option>
+                                <option value="22:00">22:00</option>
+                                <option value="23:00">23:00</option>
+                                <option value="24:00">24:00</option>
+                            </select>
+                        </div>
+                        <div class="trans_input trans_input_DDate">
+                            <p>Drop-off-date:</p> <input name="drop-off-date" required type="date" >
+                        </div>
+                        <div class="trans_input trans_input_DTime">
+                            <p>Drop-off-time</p> 
+                            <select name="Drop-off-time" required>
+                                <option value="01:00">01:00</option>
+                                <option value="02:00">02:00</option>
+                                <option value="03:00">03:00</option>
+                                <option value="04:00">04:00</option>
+                                <option value="05:00">05:00</option>
+                                <option value="06:00">06:00</option>
+                                <option value="07:00">07:00</option>
+                                <option value="08:00">08:00</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                                <option value="21:00">21:00</option>
+                                <option value="22:00">22:00</option>
+                                <option value="23:00">23:00</option>
+                                <option value="24:00">24:00</option>
+                            </select>
+                        </div>
+                        <div class="trans_input trans_input_search">
+                            <button type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="car_result">
+                <h3>Search for a car</h3>
+                
+                <div class="car_card">
+                    <div class="car_image_div">
+                        <img src="./images/suzuki_alto.png" alt="car">
+                    </div>
+                    <div class="car_content">
+                        <p class="main_text">Toyota Corolla</p>
+                        <p>Altis Automatic 1.6</p>
+                        <div class="car_icons">
+                            <div class="icon">
+                                <i class="fa-solid fa-person"></i>
+                                <p>4</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-snowflake"></i>
+                                <p>AC</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>GPS</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-radio"></i>
+                                <p>Radio</p>
+                            </div>
+                        </div>
+                        <div class="car_terms_policies">
+                            <span>Theft Protection</span>
+                            <span>Clean Interior/Exterior</span>
+                            <span>Cancellation policies</span>
+                            <span>Term & Conditions</span>
+                        </div>
+                    </div>
+                    <div class="car_booking_price">
+                        <div class="car_price">
+                            <p>Rs 3500</p>
+                            <p>Economy</p>
+                            <p>Per Day</p>
+                        </div>
+                        <div class="book_car">
+                            <button>Book me</button>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!-- <div class="car_card">
+                    <div class="car_image_div">
+                        <img src="./images/suzuki_alto.png" alt="car">
+                    </div>
+                    <div class="car_content">
+                        <p class="main_text">Toyota Corolla</p>
+                        <p>Altis Automatic 1.6</p>
+                        <div class="car_icons">
+                            <div class="icon">
+                                <i class="fa-solid fa-person-seat"></i>
+                                <p>4</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-person-seat"></i>
+                                <p>4</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-person-seat"></i>
+                                <p>4</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-person-seat"></i>
+                                <p>4</p>
+                            </div>
+                        </div>
+                        <div class="car_terms_policies">
+                            <span>Theft Protection</span>
+                            <span>Clean Interior/Exterior</span>
+                            <span>Cancellation policies</span>
+                            <span>Term & Conditions</span>
+                        </div>
+                    </div>
+                    <div class="car_booking_price">
+                        <div class="car_price">
+                            <p>Rs 3500</p>
+                            <p>Economy</p>
+                            <p>Per Day</p>
+                        </div>
+                        <div class="book_car">
+                            <button>Book me</button>
+                        </div>
+                    </div>
+                </div> -->
+                  
+            </div>
+        </div>
+    
+        <div class="popup_car_container">
+            
+        </div>
+        
+    </div>
+
+    <script src="./javascript/menu_button.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

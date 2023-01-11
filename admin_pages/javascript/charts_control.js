@@ -1,20 +1,25 @@
+let chart_selected=false
 
 
-function selected_chart_checker() {
-    
-    if (chart_selected){
-        let popup_chart_container=document.createElement('div')
-        popup_chart_container.innerHTML=`
-            <button onclick="event_handler_chart_close()">close</button>
-            <h2>Chart for</h2>
-            <p>Today's Views</p>
-            <canvas id="myChart"></canvas>`
-        popup_chart_container.classList.add("popup_chart_container")
-        document.querySelector(".container").appendChild(popup_chart_container)
-        
-    }else{
+
+// checks weather the chart is selected or not 
+// and also adds the heading for the selected chart
+function selected_chart_checker(chart_heading) {
+    if (!chart_selected){
         document.querySelector(".popup_chart_container").remove()
+        return
     }
+    
+    // if (chart_selected){
+    let popup_chart_container=document.createElement('div')
+    popup_chart_container.innerHTML=`
+        <button onclick="event_handler_chart_close()">close</button>
+        <h2>Chart for</h2>
+        <p>${chart_heading}</p>
+        <canvas id="myChart"></canvas>`
+    popup_chart_container.classList.add("popup_chart_container")
+    document.querySelector(".container").appendChild(popup_chart_container)
+    
 }
 
 
@@ -39,8 +44,9 @@ function Chart_marker({data_title_arr,data_id_arr}) {
 }
 
 
-async function data_fetcher() {
-    const response=await fetch("https://jsonplaceholder.typicode.com/posts")
+async function data_fetcher(url) {
+    console.log(url)
+    const response=await fetch(url)
     const data=await response.json()
     console.log(data)
     data_title_arr=data.map((obj)=>obj.title.length)
@@ -55,10 +61,21 @@ async function data_fetcher() {
 
 
 function event_handler_chart_div(element) {
-    console.log(element)
+    let selected_chart_text=element.childNodes[5].innerText
     chart_selected=true
-    selected_chart_checker()
-    data_fetcher()
+    // making chart 
+    selected_chart_checker(selected_chart_text)
+
+    // now depending upon the selected_chart_text diffeent data fetcher is going to be called 
+    if(selected_chart_text==="Today Views"){
+        data_fetcher("https://jsonplaceholder.typicode.com/posts")
+    }else if(selected_chart_text==="Total Earning"){
+        data_fetcher(url)
+    }else if(selected_chart_text==="Tommorow Earning"){
+        data_fetcher(url)
+    }else if(selected_chart_text==="today's views"){
+        data_fetcher(url)
+    }
 }
 function event_handler_chart_close() {
     chart_selected=false

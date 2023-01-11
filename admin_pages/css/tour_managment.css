@@ -108,6 +108,80 @@ body{
     color: #009879;
 }
 
+.popup_tour_container{
+    position: absolute;
+    background-color: #f7f7f7;
+    border: 2px solid black;
+    border-radius: 1em;
+    width: 600px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1em;
+}
+
+/* tour form */
+.tour_form input,
+.tour_form select {
+  font-size: 0.9em;
+}
+
+.tour_form button {
+   
+  border-radius: 0.4em;
+  padding: 1em 0.7em;
+  background-color: rgb(48, 35, 230);
+  color: white;
+  font-size: 0.9em;
+  width: 80%;
+  border: none;
+}
+.tour_form input {
+  border-radius: 0.3em;
+  border: 1px solid grey;
+  padding: 0.5em;
+  width: 100%;
+}
+.tour_input_travellers input{
+    width: auto;
+    
+}
+.tour_form_extra_info {
+  display: flex;
+  gap: 2em;
+  margin-bottom: 0.8em;
+  align-items: center;
+}
+.tour_input_return select {
+  border: none;
+}
+.tour_form_main_info {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.tour_form_main_info .tour_input {
+  flex: 1 1 250px;
+}
+.tour_form_main_info .tour_input_submit{
+    flex: 1 0 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tour_form_main_info .tour_input p{
+    margin: 0.3em;
+    font-weight: 600;
+}
+.tour_input input{
+    padding: 0.7em 0.5em;
+}
+/* form scale zero */
+.form_zero_scale{
+    scale: 0;
+}
 @media screen and (max-width:1200px) {
     .center_content{
         grid-column: 1/-1;
